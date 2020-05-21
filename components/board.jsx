@@ -26,7 +26,7 @@ class Board extends React.Component {
             <div> 
                 <section>{this.props.board.grid.map((row,idx) =>{
                     return <li key={idx}>{(row.map((tile, idx2) => {
-                        return( 
+                        return ( 
                             <Tile key={[idx, idx2]} tile={tile} updateGame={this.props.updateGame}/>
                         )})
                     )}</li>
